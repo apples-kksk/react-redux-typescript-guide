@@ -1591,7 +1591,7 @@ const UsersView: React.FC<Props> = ({ usersModel }) => {
 };
 
 function assertNever(value: never): never {
-  throw new Error(`Unhandled remote data state: ${value}`);
+  throw new Error(`Unhandled remote data state: ${JSON.stringify(value)}`);
 }
 
 const usersModelSelector = (state: MyTypes.RootState): UsersState =>
