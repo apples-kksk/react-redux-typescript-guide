@@ -276,7 +276,8 @@ type LoginProps = {
   // JSX children: caller passes <DefaultAvatar ... />
   readonly children?:
     | React.ReactElement<AvatarProps>
-    | React.ReactElement<AvatarProps>[];
+    | React.ReactElement<AvatarProps>[]
+    | null;
 };
 
 class Login extends React.Component<LoginProps> {
