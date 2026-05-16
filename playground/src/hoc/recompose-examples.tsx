@@ -9,7 +9,7 @@ type CounterOuterProps = {
 
 type CounterStateProps = {
   count: number;
-  setCount: (count: number) => number;
+  setCount: (count: number) => void;
 };
 
 type CounterHandlers = {
